@@ -206,6 +206,8 @@ github.com/libp2p/go-libp2p-discovery v0.1.0 h1:j+R6cokKcGbnZLf4kcNwpx6mDEUPF3N6
 github.com/libp2p/go-libp2p-discovery v0.1.0/go.mod h1:4F/x+aldVHjHDHuX85x1zWoFTGElt8HnoDzwkFZm29g=
 github.com/libp2p/go-libp2p-discovery v0.2.0 h1:1p3YSOq7VsgaL+xVHPi8XAmtGyas6D2J6rWBEfz/aiY=
 github.com/libp2p/go-libp2p-discovery v0.2.0/go.mod h1:s4VGaxYMbw4+4+tsoQTqh7wfxg97AEdo4GYBt6BadWg=
+github.com/libp2p/go-libp2p-host v0.1.0 h1:OZwENiFm6JOK3YR5PZJxkXlJE8a5u8g4YvAUrEV2MjM=
+github.com/libp2p/go-libp2p-host v0.1.0/go.mod h1:5+fWuLbDn8OxoxPN3CV0vsLe1hAKScSMbT84qRfxum8=
 github.com/libp2p/go-libp2p-kad-dht v0.4.1 h1:N++/IVD7KemtNqwoqBLsmpc1PxROW1cxi81ja+wsJCg=
 github.com/libp2p/go-libp2p-kad-dht v0.4.1/go.mod h1:Qf5Ddk5Csgi657ja2u5+NugbWz/QOVeVfrM1HTRDcfQ=
 github.com/libp2p/go-libp2p-kad-dht v0.5.0 h1:kDMtCftpQOL2s84/dZmw5z4NmBe6ByeDLKpcn6TcyxU=

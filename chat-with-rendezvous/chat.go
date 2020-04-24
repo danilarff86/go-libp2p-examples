@@ -12,7 +12,8 @@ import (
 	"github.com/libp2p/go-libp2p-core/network"
 	"github.com/libp2p/go-libp2p-core/peer"
 	"github.com/libp2p/go-libp2p-core/protocol"
-	"github.com/libp2p/go-libp2p-discovery"
+	discovery "github.com/libp2p/go-libp2p-discovery"
+	libp2pquic "github.com/libp2p/go-libp2p-quic-transport"
 
 	dht "github.com/libp2p/go-libp2p-kad-dht"
 	multiaddr "github.com/multiformats/go-multiaddr"
@@ -81,7 +82,7 @@ func writeData(rw *bufio.ReadWriter) {
 
 func main() {
 	log.SetAllLoggers(logging.WARNING)
-	log.SetLogLevel("rendezvous", "info")
+	log.SetLogLevel("rendezvous", "debug")
 	help := flag.Bool("h", false, "Display Help")
 	config, err := ParseFlags()
 	if err != nil {
@@ -101,6 +102,8 @@ func main() {
 	// libp2p.New constructs a new libp2p Host. Other options can be added
 	// here.
 	host, err := libp2p.New(ctx,
+		libp2p.Transport(libp2pquic.NewTransport),
+		libp2p.DefaultTransports,
 		libp2p.ListenAddrs([]multiaddr.Multiaddr(config.ListenAddresses)...),
 	)
 	if err != nil {
